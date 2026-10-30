@@ -6,6 +6,20 @@ headset display and cameras to a window on the Mac, and manages files on the hea
 
 Built with SwiftUI and Swift Charts. No Xcode project: a Swift package plus a build script.
 
+### GPU up to 690 MHz
+
+Quest Tuner unlocks **GPU level 7: 690 MHz**, the top clock in the Quest 3 GPU driver.
+
+| | Highest GPU level | GPU clock |
+| --- | --- | --- |
+| Meta documentation | 5 | 599 MHz (640 MHz in Favor GPU mode) |
+| SideQuest advanced settings | within the documented levels | up to 599 MHz |
+| **Quest Tuner** | **7** (undocumented) | **690 MHz** |
+
+That is about 15% more GPU clock than level 5. The GPU clock chart shows the frequency the
+headset actually runs at, so the effect is visible right away. Expect higher GPU temperature
+and battery drain; the temperature chart turns yellow and red as it climbs.
+
 ## Features
 
 ### Dashboard
@@ -38,7 +52,8 @@ next to nothing while a game runs.
 
 Writes `debug.oculus.*` system properties:
 
-- **GPU level** 0–7 (285–690 MHz). Level 7 is undocumented but reaches the top GPU clock.
+- **GPU level** 0–7 (285–690 MHz). Levels 6 (640 MHz) and 7 (690 MHz) are above Meta's
+  documented range; see [GPU up to 690 MHz](#gpu-up-to-690-mhz).
 - **CPU level** 0–6 (0.69–2.21 GHz).
 - **Refresh rate** 72, 80, 90 or 120 Hz.
 - **Foveation** Off, Low, Medium, High or High top.
