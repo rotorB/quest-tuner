@@ -6,6 +6,8 @@ headset display and cameras to a window on the Mac, and manages files on the hea
 
 Built with SwiftUI and Swift Charts. No Xcode project: a Swift package plus a build script.
 
+![Quest Tuner dashboard: a game at 90 fps with the GPU at level 7, 690 MHz](docs/dashboard.png)
+
 ### GPU up to 690 MHz
 
 Quest Tuner unlocks **GPU level 7: 690 MHz**, the top clock in the Quest 3 GPU driver.
